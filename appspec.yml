@@ -3,6 +3,8 @@ os: linux
 files:
   - source: /index.html
     destination: /opt/bitnami/apache2/htdocs/test
+  - source: /testing/index.html
+    destination: /opt/bitnami/apps/development/test
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
